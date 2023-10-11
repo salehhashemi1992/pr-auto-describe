@@ -16,7 +16,7 @@ To use this action in your GitHub repository, follow these steps:
 2. Similarly, add a secret named `TOKEN` with your GitHub API token that grants access to the repository.
 3. Add the following workflow file to your repository in the `.github/workflows` directory, and name it `pr-auto-describe.yml`:
 
-```bash
+```yaml
 on:
   pull_request:
     types: [synchronize, reopened, labeled]
