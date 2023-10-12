@@ -15,7 +15,7 @@ function main(): void
     $pullRequestId = getPrNumber();
     $repoFullName = getenv('GITHUB_REPOSITORY') ?: '';
 
-    if (hasLabel($pullRequestId, $repoFullName, getenv('INPUT_GITHUB-TOKEN'), 'ai-desc')) {
+    if (hasLabel($pullRequestId, $repoFullName, getenv('INPUT_GITHUB-TOKEN'), 'ai-describe')) {
         $model = getenv('INPUT_OPENAI-MODEL') ?: 'gpt-3.5-turbo';
 
         if (!in_array($model, ['gpt-4', 'gpt-4-32k', 'gpt-3.5-turbo'])) {

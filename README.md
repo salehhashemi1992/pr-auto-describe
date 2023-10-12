@@ -1,7 +1,7 @@
 # PR Auto Describe
 Automatically generate descriptions for pull requests using AI.
 
-When you open or update a pull request labeled with **"ai-desc"**, this action will automatically generate a concise list of changes for pull requests and post them as comments on the pull request.
+When you open or update a pull request labeled with **"ai-describe"**, this action will automatically generate a concise list of changes for pull requests and post them as comments on the pull request.
 
 The Action categorizes each change by its type (e.g., 'Refactor', 'Bug Fix', 'Optimization') for an easy-to-understand summary.
 
