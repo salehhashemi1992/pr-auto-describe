@@ -7,6 +7,7 @@ The Action categorizes each change by its type (e.g., 'Refactor', 'Bug Fix', 'Op
 
 ### Example Output
 ![](./img/sample1.jpg)
+![](./img/sample2.gif)
 
 ## Requirements
 * GitHub API token for API access.
