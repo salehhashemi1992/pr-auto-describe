@@ -207,6 +207,7 @@ function generatePrompt(string $prChanges): string
     $prompt .= "Please generate a concise list of changes, categorizing each by its type (e.g., 'Refactor', 'Bug Fix', 'Optimization').\n\n";
 
     $prompt .= "Structure your list of changes like this:\n";
+    $prompt .= "[Short description of the whole changes]\n\n";
     $prompt .= "1. **Type**: Refactor\n   **Description**: [Short description of the change]\n";
     $prompt .= "2. **Type**: Optimization\n   **Description**: [Short description of the change]\n";
     $prompt .= "...";
@@ -227,6 +228,8 @@ function postCommentToPr(string $comment, string $pullRequestId, string $repoFul
     $apiEndpoint = getenv('INPUT_GITHUB-API-BASE-URL') . "/repos/{$repoFullName}/issues/{$pullRequestId}/comments";
 
     $client = new Client();
+
+    $comment = "**PR Auto Describe:**\n\n" . $comment;
 
     try {
         $response = $client->request('POST', $apiEndpoint, [
