@@ -5,6 +5,9 @@ When you open or update a pull request labeled with **"ai-describe"**, this acti
 
 The Action categorizes each change by its type (e.g., 'Refactor', 'Bug Fix', 'Optimization') for an easy-to-understand summary.
 
+### Example Output
+![](./img/sample1.jpg)
+
 ## Requirements
 * GitHub API token for API access.
 * OpenAI API key for fetching AI suggestions.
