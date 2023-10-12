@@ -22,7 +22,7 @@ on:
     types: [synchronize, reopened, labeled]
 
 jobs:
-  ai_commit_message:
+  describe:
     runs-on: ubuntu-latest
     permissions:
       contents: write
